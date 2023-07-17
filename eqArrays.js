@@ -10,24 +10,18 @@ const assertEqual = function(actual, expected) {
 
 
 const eqArrays = function(arrOne, arrTwo,) {
-  let firstElements = '';
-  let  secondElements = '';
-  for (let i = 0; i < arrOne.length; i++) {
-    firstElements += arrOne[i];
-  }
 
-  for (let j = 0; j < arrTwo.length; j++) {
-    secondElements += arrTwo[j];
-    console.log(secondElements);
-  }
-
-  if (firstElements === secondElements) {
-    return true;
-  }
-
-  if (firstElements !== secondElements) {
+  if (arrOne.length !== arrTwo.length) {
     return false;
   }
+  
+  for (let i = 0; i < arrOne.length; i++) {
+    if (arrOne[i] !== arrTwo[i]) {
+      return false;
+    }
+  } 
+  
+  return true;
 
 };
 
@@ -36,4 +30,8 @@ const eqArrays = function(arrOne, arrTwo,) {
 
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [1, 3, 3]), true); // => should FAIL
+assertEqual(eqArrays([1, 2, 3], [1, 3, 3]), false); // => should FAIL
+assertEqual(eqArrays([1, 2], [1, 2, 3]), false);
+assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false)
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true)
+assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false)
