@@ -1,4 +1,4 @@
-const eqArrays = function(arrOne, arrTwo,) {
+const assertArraysEqual = function(arrOne, arrTwo,) {
 
   if (arrOne.length !== arrTwo.length) {
     console.log("🛑Assertion failed: arrays are NOT equal");
@@ -18,8 +18,8 @@ const eqArrays = function(arrOne, arrTwo,) {
 };
 
 
-eqArrays([1, 2, 3], [1, 2, 3]) // => true
-eqArrays([1, 2, 3], [3, 2, 1]) // => false
+assertArraysEqual([1, 2, 3], [1, 2, 3]) // => true
+assertArraysEqual([1, 2, 3], [3, 2, 1]) // => false
 
-eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
-eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]) // => true
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]) // => false
