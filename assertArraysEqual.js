@@ -21,18 +21,6 @@ const assertArraysEqual = function(arrOne, arrTwo,) {
     return;
   } else {
     console.log(`🛑Assertion failed: ${arrOne} !== ${arrTwo}`);
-
-  // }
-  
-  // for (let i = 0; i < arrOne.length; i++) {
-  //   if (arrOne[i] !== arrTwo[i]) {
-  //     console.log("🛑Assertion failed: arrays are NOT equal");
-  //     return ;
-  //   }
-  // } 
-  
-  // console.log("✅Assertion passed: arrays are equal");
-  // return;
   }
 };
 
