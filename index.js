@@ -11,13 +11,13 @@ const eqArrays = require('./eqArrays');
 
 
 module.exports = {
-  head: head,
-  tail: tail,
-  middle: middle,
-  flatten: flatten,
-  countOnly: countOnly,
-  letterPositions: letterPositions,
-  findKeyByValue: findKeyByValue,
-  eqObjects: eqObjects,
-  eqArrays: eqArrays
+  head,
+  tail,
+  middle,
+  flatten,
+  countOnly,
+  letterPositions,
+  findKeyByValue,
+  eqObjects,
+  eqArrays
 }
