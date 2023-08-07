@@ -39,7 +39,7 @@ const eqObjects = function(object1, object2) {
 };
 
 
-
+//Create function that takes in 2 objects and returns true if they are equal and false otherwise.
 const assertObjectsEqual = function(actual, expected) {
 
   const inspect = require('util').inspect;
@@ -53,6 +53,8 @@ const assertObjectsEqual = function(actual, expected) {
 
 
 };
+
+module.exports = eqObjects;
 
 
 

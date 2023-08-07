@@ -1,3 +1,4 @@
+//Create function that takes in an array and callback and returns a slice of the array based on the criteria specified in the callback.
 const takeUntil = function(array, callback) {
   const result = [];
   for (let i = 0; i < array.length; i++) {
@@ -8,6 +9,8 @@ const takeUntil = function(array, callback) {
     }
   }
 };
+
+module.exports = takeUntil;
 
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];

@@ -8,6 +8,7 @@ const assertEqual = function(actual, expected) {
   console.log(`🛑🛑🛑Assertion Failed: ${actual} !==  ${expected}`);
 };
 
+//Create function that takes in an object and a value and returns the first key that corresponds to that value.
 const findKeyByValue = function(obj, value) {
 
   for (const element of Object.keys(obj)) {

@@ -1,3 +1,4 @@
+// Create function that takes in an array and returns middle elements of the array.
 const middle = function(arr) {
 
   let newArray = [];

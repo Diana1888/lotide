@@ -8,9 +8,11 @@ const assertEqual = function(actual, expected) {
   console.log(`🛑🛑🛑Assertion Failed: ${actual} !==  ${expected}`);
 };
 
+//Create function that takes an array of items and returns object with key and value mathing items.
 
 // allItems: an array of strings that we need to look through
 // itemsToCount: an object specifying what to count
+
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
 

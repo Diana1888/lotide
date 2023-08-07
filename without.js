@@ -35,7 +35,7 @@ const eqArrays = function(arrOne, arrTwo,) {
 };
 
 
-
+//Create  function that takes in a source array and an itemsToRemove arrays and returns only the items from the source array that are not in the itemsToRemove array.
 const without = function(words, itemsToRemove) {
   let newArray = [];
 
@@ -46,6 +46,8 @@ const without = function(words, itemsToRemove) {
   }
   return newArray;
 };
+
+module.exports = without;
 
 
 console.log(without([1, 2, 3], [1])); // => [2, 3]

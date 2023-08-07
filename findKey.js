@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
   console.log(`🛑🛑🛑Assertion Failed: ${actual} !==  ${expected}`);
 };
 
-
+//Create function that takes in an object and callback and returns the first key that meets the criteria specified in callback.
 const findKey = function(obj, callback) {
 
   for (const element of Object.keys(obj)) {
@@ -18,6 +18,8 @@ const findKey = function(obj, callback) {
   }
 
 };
+
+module.exports = findKey;
 
 const rating = {
   "Blue Hill": { stars: 1 },

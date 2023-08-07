@@ -34,6 +34,7 @@ const eqArrays = function(arrOne, arrTwo,) {
 
 };
 
+//Create function that takes in an array that contains elements including nested array of elements and returns a single-level array.
 const flatten = function(arr) {
   let newArray = [];
   for (let i = 0; i < arr.length; i++) {
