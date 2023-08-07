@@ -1,23 +1,39 @@
-const head   = require('./head');
-const tail   = require('./tail');
-const middle = require('./middle');
-const flatten = require('./flatten');
+//Create an index.js file that exports all the functions in Lotide as an object.
+const assertArraysEqual = require('./assertArraysEqual');
+const assertEqual = require('./assertEqual');
+const assertObjectsEqual = require('./assertObjectsEqual');
+const countLetters = require('./countLetters');
 const countOnly = require('./countOnly');
-const letterPositions = require('./letterPositions');
-const findKeyByValue = require('./findKeyByValue');
-const eqObjects = require('./eqObjects');
 const eqArrays = require('./eqArrays');
-
+const eqObjects = require('./eqObjects');
+const findKey = require('./findKey');
+const findKeyByValue = require('./findKeyByValue');
+const flatten = require('./flatten');
+const head   = require('./head');
+const letterPositions = require('./letterPositions');
+const map = require('./map');
+const middle = require('./middle');
+const tail   = require('./tail');
+const takeUntil   = require('./takeUntil');
+const without   = require('./without');
 
 
 module.exports = {
-  head,
-  tail,
-  middle,
-  flatten,
+  assertArraysEqual,
+  assertEqual,
+  assertObjectsEqual,
+  countLetters,
   countOnly,
-  letterPositions,
-  findKeyByValue,
+  eqArrays,
   eqObjects,
-  eqArrays
+  findKey,
+  findKeyByValue,
+  flatten,
+  head,
+  letterPositions,
+  map,
+  middle,
+  tail,
+  takeUntil,
+  without  
 }
