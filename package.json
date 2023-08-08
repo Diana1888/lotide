@@ -1,6 +1,6 @@
 {
   "name": "@diana1888/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A clone of the lodash JavaScript library",
   "main": "index.js",
   "directories": {
